@@ -27,6 +27,30 @@
         <li>Email: tupmfoodspots@example.com</li>
         <li>Instagram: @tupmfoodspots</li>
       </ul>
+      <form>
+  <fieldset>
+    <legend>Your details</legend>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Subject</label>
+    <select id="subject" name="subject">
+      <option value="suggest-place">Suggest a place</option>
+      <option value="correct-detail">Correct a detail</option>
+      <option value="ask-question">Ask a question</option>
+      <option value="other">Something else</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send message</button>
+  </fieldset>
+</form>
     </section>
   </main>
 
