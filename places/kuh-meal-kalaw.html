@@ -47,6 +47,45 @@
           <td>Before 11:30 AM to avoid the lunch rush</td>
         </tr>
       </table>
+      <form>
+  <fieldset>
+    <legend>Suggest a Place</legend>
+
+    <label for="place-name">Place name</label>
+    <input type="text" id="place-name" name="place-name" required>
+
+    <fieldset>
+      <legend>Category</legend>
+
+      <input type="radio" id="category-food" name="category" value="food">
+      <label for="category-food">Food</label>
+
+      <input type="radio" id="category-study" name="category" value="study">
+      <label for="category-study">Study spot</label>
+
+      <input type="radio" id="category-outdoors" name="category" value="outdoors">
+      <label for="category-outdoors">Outdoors</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What's good about it</legend>
+
+      <input type="checkbox" id="good-affordable" name="good-points" value="affordable">
+      <label for="good-affordable">Affordable</label>
+
+      <input type="checkbox" id="good-wifi" name="good-points" value="wifi">
+      <label for="good-wifi">Good wifi</label>
+
+      <input type="checkbox" id="good-quiet" name="good-points" value="quiet">
+      <label for="good-quiet">Quiet</label>
+    </fieldset>
+
+    <label for="email">Contact email</label>
+    <input type="email" id="email" name="email" required>
+
+    <button type="submit">Send suggestion</button>
+  </fieldset>
+</form>
     </section>
   </main>
 
