@@ -227,3 +227,109 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #b8380c;
 }
+
+/* Place cards */
+.place-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid var(--brand-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.place-card h3 {
+  font-size: 1.3rem;
+  color: var(--ink-color);
+}
+
+.place-card img {
+  border-radius: 8px;
+  margin: 0.75rem 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.place-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: var(--brand-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.place-card a:hover {
+  background-color: #b8380c;
+  text-decoration: none;
+}
+
+/* Form styling */
+form {
+  margin-top: 1.5rem;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--brand-color);
+  padding: 0 0.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  color: var(--ink-color);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--ink-color);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+button[type="submit"] {
+  margin-top: 1rem;
+  background-color: var(--brand-color);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #b8380c;
+}
+
+/* Visible focus state — required for keyboard accessibility */
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: 3px solid var(--brand-color);
+  outline-offset: 2px;
+}
