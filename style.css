@@ -42,40 +42,38 @@ a:hover {
 
 /* ===== 3. Layout Regions ===== */
 
-/* Header */
-header {
+/* Header — flexbox layout */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--ink-color);
   color: #fff;
-  padding: 2rem 1.5rem 1.5rem;
-  text-align: center;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-header h1 {
+.site-brand h1 {
   color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 0;
 }
 
-header p {
+.site-brand p {
   color: #d1d5db;
-  max-width: 600px;
-  margin: 0 auto 1rem;
+  margin-bottom: 0;
 }
 
-/* Nav */
-nav ul {
+.site-header nav ul {
+  display: flex;
+  gap: 20px;
   list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
+  margin: 0;
 }
 
-nav li {
-  display: inline-block;
-}
-
-nav a {
+.site-header nav a {
   color: #fff;
   font-weight: bold;
   padding: 0.4rem 0.9rem;
@@ -84,9 +82,8 @@ nav a {
   transition: background-color 0.2s ease;
 }
 
-nav a:hover {
+.site-header nav a:hover {
   background-color: var(--brand-color);
-  text-decoration: none;
 }
 
 /* Main */
@@ -112,120 +109,11 @@ footer a {
 
 /* ===== 4. Components ===== */
 
-/* Product cards */
-article {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  color: var(--muted-grey);
-}
-
-article h3 {
-  color: var(--ink-color);
-}
-
-article img {
-  border-radius: 8px;
-  margin: 0.75rem 0;
-  max-width: 100%;
-  height: auto;
-}
-
-article a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  background-color: var(--brand-color);
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-size: 0.9rem;
-}
-
-article a:hover {
-  background-color: #b8380c;
-  text-decoration: none;
-}
-
-/* Tables (product spec sheets) */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.5rem 0;
-  background-color: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-th, td {
-  padding: 0.75rem 1rem;
-  text-align: left;
-  border-bottom: 1px solid #eee;
-}
-
-th {
-  background-color: var(--ink-color);
-  color: #fff;
-}
-
-/* Forms */
-form {
-  margin-top: 1.5rem;
-}
-
-fieldset {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-legend {
-  font-weight: bold;
-  color: var(--ink-color);
-  padding: 0 0.5rem;
-}
-
-label {
-  display: block;
-  margin-top: 0.75rem;
-  margin-bottom: 0.25rem;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select,
-textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-family: inherit;
-  font-size: 1rem;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  margin-right: 0.5rem;
-}
-
-button[type="submit"] {
-  margin-top: 1rem;
-  background-color: var(--brand-color);
-  color: #fff;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #b8380c;
+/* Place grid — responsive layout */
+.place-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 /* Place cards */
@@ -236,6 +124,7 @@ button[type="submit"]:hover {
   margin-bottom: 1.5rem;
   border-left: 5px solid var(--brand-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex: 1 1 240px;
 }
 
 .place-card h3 {
@@ -265,7 +154,29 @@ button[type="submit"]:hover {
   text-decoration: none;
 }
 
-/* Form styling */
+/* Tables (place detail specs) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: var(--ink-color);
+  color: #fff;
+}
+
+/* Forms */
 form {
   margin-top: 1.5rem;
 }
@@ -332,4 +243,20 @@ select:focus,
 button:focus {
   outline: 3px solid var(--brand-color);
   outline-offset: 2px;
+}
+
+/* Centred hero banner on place detail pages */
+.detail-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: var(--light-bg);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.detail-hero h1 {
+  margin: 0;
+  text-align: center;
 }
