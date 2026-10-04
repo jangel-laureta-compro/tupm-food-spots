@@ -2,100 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daddy's Sisig - TUPM Food Spots</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-  <header class="site-header">
-  <div class="site-brand">
-    <h1>TUPM Food Spots</h1>
+  <div class="page">
+
+    <header class="site-header">
+      <div class="site-brand">
+        <h1>TUPM Food Spots</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside>
+      <h2>Food Categories</h2>
+      <ul>
+        <li>Budget Eats</li>
+        <li>Filipino Classics</li>
+        <li>Mall Food Courts</li>
+      </ul>
+    </aside>
+
+    <main>
+      <section>
+        <div class="detail-hero">
+          <h1>Daddy's Sisig</h1>
+        </div>
+        <img src="../sisig.jpg" alt="Sizzling sisig plate from Daddy's Sisig">
+
+        <p>Daddy's Sisig is the spot for when you're craving something rich and savory after a long day of classes. Their sisig comes out sizzling hot on a cast iron plate, packed with flavor and just the right amount of crispiness. Best enjoyed with a cold drink and maybe a friend or two to split a plate with.</p>
+
+        <table>
+          <tr>
+            <th>Detail</th>
+            <th>Information</th>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td>720 Mercedes Street, Ermita, Manila</td>
+          </tr>
+          <tr>
+            <td>Landmark</td>
+            <td>Behind San Marcelino St., near Adamson University High School</td>
+          </tr>
+          <tr>
+            <td>Price Range</td>
+            <td>₱120 – ₱200 per plate</td>
+          </tr>
+          <tr>
+            <td>Best Time to Visit</td>
+            <td>Evenings, for the full sizzling experience</td>
+          </tr>
+        </table>
+
+        <form>
+          <fieldset>
+            <legend>Suggest a Place</legend>
+
+            <label for="place-name">Place name</label>
+            <input type="text" id="place-name" name="place-name" required>
+
+            <fieldset>
+              <legend>Category</legend>
+              <input type="radio" id="category-food" name="category" value="food">
+              <label for="category-food">Food</label>
+              <input type="radio" id="category-study" name="category" value="study">
+              <label for="category-study">Study spot</label>
+              <input type="radio" id="category-outdoors" name="category" value="outdoors">
+              <label for="category-outdoors">Outdoors</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>What's good about it</legend>
+              <input type="checkbox" id="good-affordable" name="good-points" value="affordable">
+              <label for="good-affordable">Affordable</label>
+              <input type="checkbox" id="good-wifi" name="good-points" value="wifi">
+              <label for="good-wifi">Good wifi</label>
+              <input type="checkbox" id="good-quiet" name="good-points" value="quiet">
+              <label for="good-quiet">Quiet</label>
+            </fieldset>
+
+            <label for="email">Contact email</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Send suggestion</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="https://jangel-laureta-compro.github.io/laureta_johnangel/">Back to Main Site</a></p>
+    </footer>
+
   </div>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../about.html">About</a></li>
-      <li><a href="../contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-  <main>
-    <section>
-     <div class="detail-hero">
-  <h1>Daddy's Sisig</h1>
-</div>
-      <img src="../sisig.jpg" alt="Sizzling sisig plate from Daddy's Sisig" style="width: 400px; height: auto;">
-
-      <p>Daddy's Sisig is the spot for when you're craving something rich and savory after a long day of classes. Their sisig comes out sizzling hot on a cast iron plate, packed with flavor and just the right amount of crispiness. Best enjoyed with a cold drink and maybe a friend or two to split a plate with.</p>
-
-      <table>
-        <tr>
-          <th>Detail</th>
-          <th>Information</th>
-        </tr>
-        <tr>
-          <td>Address</td>
-          <td>720 Mercedes Street, Ermita, Manila</td>
-        </tr>
-        <tr>
-          <td>Landmark</td>
-          <td>Behind San Marcelino St., near Adamson University High School</td>
-        </tr>
-        <tr>
-          <td>Price Range</td>
-          <td>₱120 – ₱200 per plate</td>
-        </tr>
-        <tr>
-          <td>Best Time to Visit</td>
-          <td>Evenings, for the full sizzling experience</td>
-        </tr>
-      </table>
-      <form>
-  <fieldset>
-    <legend>Suggest a Place</legend>
-
-    <label for="place-name">Place name</label>
-    <input type="text" id="place-name" name="place-name" required>
-
-    <fieldset>
-      <legend>Category</legend>
-
-      <input type="radio" id="category-food" name="category" value="food">
-      <label for="category-food">Food</label>
-
-      <input type="radio" id="category-study" name="category" value="study">
-      <label for="category-study">Study spot</label>
-
-      <input type="radio" id="category-outdoors" name="category" value="outdoors">
-      <label for="category-outdoors">Outdoors</label>
-    </fieldset>
-
-    <fieldset>
-      <legend>What's good about it</legend>
-
-      <input type="checkbox" id="good-affordable" name="good-points" value="affordable">
-      <label for="good-affordable">Affordable</label>
-
-      <input type="checkbox" id="good-wifi" name="good-points" value="wifi">
-      <label for="good-wifi">Good wifi</label>
-
-      <input type="checkbox" id="good-quiet" name="good-points" value="quiet">
-      <label for="good-quiet">Quiet</label>
-    </fieldset>
-
-    <label for="email">Contact email</label>
-    <input type="email" id="email" name="email" required>
-
-    <button type="submit">Send suggestion</button>
-  </fieldset>
-</form>
-    </section>
-  </main>
-
-  <footer>
-    <p><a href="https://jangel-laureta-compro.github.io/laureta_johnangel/">Back to Main Site</a></p>
-  </footer>
 
 </body>
 </html>

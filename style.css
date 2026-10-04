@@ -40,6 +40,11 @@ a:hover {
   text-decoration: underline;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ===== 3. Layout Regions ===== */
 
 /* Header — flexbox layout */
@@ -135,8 +140,6 @@ footer a {
 .place-card img {
   border-radius: 8px;
   margin: 0.75rem 0;
-  max-width: 100%;
-  height: auto;
 }
 
 .place-card a {
@@ -259,4 +262,57 @@ button:focus {
 .detail-hero h1 {
   margin: 0;
   text-align: center;
+}
+
+/* ===== Page Grid Layout — Mobile First ===== */
+
+/* Base: mobile — single column, everything stacked */
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "masthead"
+    "main"
+    "side"
+    "foot";
+  gap: 16px;
+}
+
+.page header { grid-area: masthead; }
+.page aside  { grid-area: side; }
+.page main   { grid-area: main; }
+.page footer { grid-area: foot; }
+
+/* Enhance at tablet and up */
+@media (min-width: 700px) {
+  .page {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "masthead masthead"
+      "side     main"
+      "foot     foot";
+  }
+}
+
+/* Sidebar styling */
+aside {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+aside h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li {
+  margin-bottom: 0.5rem;
+  color: var(--muted-grey);
 }

@@ -2,100 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kuh Meal Kalaw - TUPM Food Spots</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
- <header class="site-header">
-  <div class="site-brand">
-    <h1>TUPM Food Spots</h1>
+  <div class="page">
+
+    <header class="site-header">
+      <div class="site-brand">
+        <h1>TUPM Food Spots</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside>
+      <h2>Food Categories</h2>
+      <ul>
+        <li>Budget Eats</li>
+        <li>Filipino Classics</li>
+        <li>Mall Food Courts</li>
+      </ul>
+    </aside>
+
+    <main>
+      <section>
+        <div class="detail-hero">
+          <h1>Kuh Meal Kalaw</h1>
+        </div>
+        <img src="../kuhmeal.jpg" alt="Kuh Meal Kalaw restaurant storefront">
+
+        <p>Kuh Meal Kalaw is my go-to spot when I need a quick, filling meal between classes without spending too much. It's just a short walk from campus, making it perfect for a lunch break. Portions are generous for the price, and the staff are quick, so you're rarely stuck waiting during the lunch rush.</p>
+
+        <table>
+          <tr>
+            <th>Detail</th>
+            <th>Information</th>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td>Parkview Plaza, Kalaw, Manila</td>
+          </tr>
+          <tr>
+            <td>Hours</td>
+            <td>Mon–Sat 9:00 AM–9:00 PM, Sun 11:30 AM–8:30 PM</td>
+          </tr>
+          <tr>
+            <td>Price Range</td>
+            <td>₱80 – ₱150 per meal</td>
+          </tr>
+          <tr>
+            <td>Best Time to Visit</td>
+            <td>Before 11:30 AM to avoid the lunch rush</td>
+          </tr>
+        </table>
+
+        <form>
+          <fieldset>
+            <legend>Suggest a Place</legend>
+
+            <label for="place-name">Place name</label>
+            <input type="text" id="place-name" name="place-name" required>
+
+            <fieldset>
+              <legend>Category</legend>
+              <input type="radio" id="category-food" name="category" value="food">
+              <label for="category-food">Food</label>
+              <input type="radio" id="category-study" name="category" value="study">
+              <label for="category-study">Study spot</label>
+              <input type="radio" id="category-outdoors" name="category" value="outdoors">
+              <label for="category-outdoors">Outdoors</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>What's good about it</legend>
+              <input type="checkbox" id="good-affordable" name="good-points" value="affordable">
+              <label for="good-affordable">Affordable</label>
+              <input type="checkbox" id="good-wifi" name="good-points" value="wifi">
+              <label for="good-wifi">Good wifi</label>
+              <input type="checkbox" id="good-quiet" name="good-points" value="quiet">
+              <label for="good-quiet">Quiet</label>
+            </fieldset>
+
+            <label for="email">Contact email</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Send suggestion</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="https://jangel-laureta-compro.github.io/laureta_johnangel/">Back to Main Site</a></p>
+    </footer>
+
   </div>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../about.html">About</a></li>
-      <li><a href="../contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-  <main>
-    <section>
-      <div class="detail-hero">
-  <h1>Kuh Meal Kalaw</h1>
-</div>
-      <img src="../kuhmeal.jpg" alt="Kuh Meal Kalaw restaurant storefront" style="width: 400px; height: auto;">
-
-      <p>Kuh Meal Kalaw is my go-to spot when I need a quick, filling meal between classes without spending too much. It's just a short walk from campus, making it perfect for a lunch break. Portions are generous for the price, and the staff are quick, so you're rarely stuck waiting during the lunch rush.</p>
-
-      <table>
-        <tr>
-          <th>Detail</th>
-          <th>Information</th>
-        </tr>
-        <tr>
-          <td>Address</td>
-          <td>Parkview Plaza, Kalaw, Manila</td>
-        </tr>
-        <tr>
-          <td>Hours</td>
-          <td>Mon–Sat 9:00 AM–9:00 PM, Sun 11:30 AM–8:30 PM</td>
-        </tr>
-        <tr>
-          <td>Price Range</td>
-          <td>₱80 – ₱150 per meal</td>
-        </tr>
-        <tr>
-          <td>Best Time to Visit</td>
-          <td>Before 11:30 AM to avoid the lunch rush</td>
-        </tr>
-      </table>
-      <form>
-  <fieldset>
-    <legend>Suggest a Place</legend>
-
-    <label for="place-name">Place name</label>
-    <input type="text" id="place-name" name="place-name" required>
-
-    <fieldset>
-      <legend>Category</legend>
-
-      <input type="radio" id="category-food" name="category" value="food">
-      <label for="category-food">Food</label>
-
-      <input type="radio" id="category-study" name="category" value="study">
-      <label for="category-study">Study spot</label>
-
-      <input type="radio" id="category-outdoors" name="category" value="outdoors">
-      <label for="category-outdoors">Outdoors</label>
-    </fieldset>
-
-    <fieldset>
-      <legend>What's good about it</legend>
-
-      <input type="checkbox" id="good-affordable" name="good-points" value="affordable">
-      <label for="good-affordable">Affordable</label>
-
-      <input type="checkbox" id="good-wifi" name="good-points" value="wifi">
-      <label for="good-wifi">Good wifi</label>
-
-      <input type="checkbox" id="good-quiet" name="good-points" value="quiet">
-      <label for="good-quiet">Quiet</label>
-    </fieldset>
-
-    <label for="email">Contact email</label>
-    <input type="email" id="email" name="email" required>
-
-    <button type="submit">Send suggestion</button>
-  </fieldset>
-</form>
-    </section>
-  </main>
-
-  <footer>
-    <p><a href="https://jangel-laureta-compro.github.io/laureta_johnangel/">Back to Main Site</a></p>
-  </footer>
 
 </body>
 </html>

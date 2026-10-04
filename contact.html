@@ -2,63 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - TUPM Food Spots</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="site-header">
-  <div class="site-brand">
-    <h1>TUPM Food Spots</h1>
-    <p>Your guide to the best eats in and around TUP Manila.</p>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <div class="page">
 
-  <main>
-    <section>
-      <h2>Get in Touch</h2>
-      <p>Got a food spot suggestion or a question? Reach out through any of these:</p>
+    <header class="site-header">
+      <div class="site-brand">
+        <h1>TUPM Food Spots</h1>
+        <p>Your guide to the best eats in and around TUP Manila.</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside>
+      <h2>Food Categories</h2>
       <ul>
-        <li>Email: tupmfoodspots@example.com</li>
-        <li>Instagram: @tupmfoodspots</li>
+        <li>Budget Eats</li>
+        <li>Filipino Classics</li>
+        <li>Mall Food Courts</li>
       </ul>
-      <form>
-  <fieldset>
-    <legend>Your details</legend>
+      <h2>Why Trust This Guide</h2>
+      <p>Every spot listed is somewhere I've personally eaten — no filler, just real recommendations.</p>
+    </aside>
 
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+    <main>
+      <section>
+        <h2>Get in Touch</h2>
+        <p>Got a food spot suggestion or a question? Reach out through any of these:</p>
+        <ul>
+          <li>Email: tupmfoodspots@example.com</li>
+          <li>Instagram: @tupmfoodspots</li>
+        </ul>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+        <form>
+          <fieldset>
+            <legend>Your details</legend>
 
-    <label for="subject">Subject</label>
-    <select id="subject" name="subject">
-      <option value="suggest-place">Suggest a place</option>
-      <option value="correct-detail">Correct a detail</option>
-      <option value="ask-question">Ask a question</option>
-      <option value="other">Something else</option>
-    </select>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-    <button type="submit">Send message</button>
-  </fieldset>
-</form>
-    </section>
-  </main>
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="suggest-place">Suggest a place</option>
+              <option value="correct-detail">Correct a detail</option>
+              <option value="ask-question">Ask a question</option>
+              <option value="other">Something else</option>
+            </select>
 
-  <footer>
-    <p><a href="https://jangel-laureta-compro.github.io/laureta_johnangel/">Back to Main Site</a></p>
-  </footer>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send message</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="https://jangel-laureta-compro.github.io/laureta_johnangel/">Back to Main Site</a></p>
+    </footer>
+
+  </div>
 
 </body>
 </html>
